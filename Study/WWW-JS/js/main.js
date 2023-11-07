@@ -1,4 +1,8 @@
-function checkForm(el) {
+document.getElementById('main-form').addEventListener("submit", checkForm);
+
+function checkForm(event) {
+    event.preventDefault();
+    var el = document.getElementById('main-form');
 
     var name = el.name.value;
     var pass = el.pass.value;
@@ -23,5 +27,4 @@ function checkForm(el) {
         alert("Все данные корректно заполнены");
         window.location = "https://ya.ru"; 
     }
-    return false;
 }
