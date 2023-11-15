@@ -1,5 +1,5 @@
 document.querySelectorAll('.btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-        alert(`Кнопка ${btn.dataset.number}`)
+        alert(`Кнопка ${btn.dataset.number}, кликов: ${ ++btn.dataset.clicks}`)
     })
 });
