@@ -26,3 +26,22 @@ body {
     margin: 0 auto;
     padding: 40px 15px;
 }
+
+.btn[data-clicks="0"] {
+    background-color: red;
+}
+
+
+.btn[data-clicks="1"] {
+    background-color: green;
+}
+
+
+.btn[data-clicks="2"] {
+    background-color: blue;
+}
+
+
+.btn[data-clicks="3"] {
+    background-color: yellow;
+}
