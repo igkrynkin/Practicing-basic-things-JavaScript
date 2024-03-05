@@ -297,58 +297,77 @@ if (hamburger && cola || fries === 3 && nuggets) {
 // ####################################################### Задачи/ОТВЕТ №4 ##################################
 
 
-// Место для первой задачи
-function firstTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const arr = [3, 5, 8, 16, 20, 23, 50];
-    const result = [];
-
-    // Пишем решение вот тут
-    for (let i = 0; i < arr.length; i++) {
-        result[i] = arr[i];
-    }
+// // Место для первой задачи
+// function firstTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const arr = [3, 5, 8, 16, 20, 23, 50];
+//     const result = [];
     
-    // Не трогаем
-    return result;
+//     // Пишем решение вот тут
+//     for (let i = 0; i < arr.length; i++) {
+//         result[i] = arr[i];
+//     }
+    
+//     // Не трогаем
+//     return result;
+// }
+
+// // Вызываем функцию и выводим результат в консоль
+// console.log(firstTask());
+
+// // Место для второй задачи
+// function secondTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+    
+//     // Пишем решение вот тут
+//     for (let i = 0; i < data.length; i++) {
+//         if (typeof(data[i]) === 'number') {
+//             data[i] *= 2; // Увеличиваем числа в 2 раза
+//         } else if (typeof(data[i]) === 'string') {
+//             data[i] += ' - done'; // Добавляем " - done" к строкам
+//         }
+//     }
+    
+//     // Не трогаем
+//     return data;
+// }
+
+// console.log(secondTask());
+
+// // Место для третьей задачи
+// function thirdTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+    
+//     // Пишем решение вот тут
+//     for (let i = data.length - 1; i >= 0; i--) {
+//         result.push(data[i]); // Добавляем текущий элемент массива data в начало массива result
+//     }
+    
+    
+//     // Не трогаем
+//     return result;
+// }
+
+// console.log(thirdTask());
+
+
+// ####################################################### Задачи/ОТВЕТ №5 ##################################
+
+// НЕ РЕШИЛ
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
 }
 
-// Вызываем функцию и выводим результат в консоль
-console.log(firstTask());
-
-// Место для второй задачи
-function secondTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
-
-    // Пишем решение вот тут
-    for (let i = 0; i < data.length; i++) {
-        if (typeof(data[i]) === 'number') {
-            data[i] *= 2; // Увеличиваем числа в 2 раза
-        } else if (typeof(data[i]) === 'string') {
-            data[i] += ' - done'; // Добавляем " - done" к строкам
-        }
-    }
-    
-    // Не трогаем
-    return data;
-}
-
-console.log(secondTask());
-
-// Место для третьей задачи
-function thirdTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
-    const result = [];
-
-    // Пишем решение вот тут
-    for (let i = data.length - 1; i >= 0; i--) {
-        result.push(data[i]); // Добавляем текущий элемент массива data в начало массива result
-    }
-
-    
-    // Не трогаем
-    return result;
-}
-
-console.log(thirdTask());
+console.log(result)
