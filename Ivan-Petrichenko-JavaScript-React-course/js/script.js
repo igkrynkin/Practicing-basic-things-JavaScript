@@ -1,3 +1,5 @@
+'use strict';
+
 // ####################################################### Задача №1 ##################################
 
 /* Задание на урок №1:
@@ -201,15 +203,91 @@ if (hamburger && cola || fries === 3 && nuggets) {
 
 // ####################################################### Цикл label ##################################
 
-'use strict';
+// 'use strict';
 
-first: for (let i = 0; i < 3; i++) {
-    console.log(`First level: ${i}`);
-    for (let j = 0; j < 3; j++) {
-        console.log(`Second level: ${j}`);
-        for (let k = 0; k < 3; k++) {
-            if (k === 2) continue first;
-            console.log(`Third level: ${k}`);
-        }
+// first: for (let i = 0; i < 3; i++) {
+//     console.log(`First level: ${i}`);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`Second level: ${j}`);
+//         for (let k = 0; k < 3; k++) {
+//             if (k === 2) continue first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+// }
+
+// ####################################################### Задачи/ОТВЕТ №3 ##################################
+
+// Место для первой задачи
+function firstTask() {
+    // Пишем решение вот тут
+    for (let i = 5; i <= 10; i++) {
+        console.log(i);
     }
+    
 }
+
+// Место для второй задачи
+function secondTask() {
+    // Пишем решение вот тут
+    for (let i = 20; i >= 10; i--) {
+        if (i === 13) {
+            break; // прерывает выполнение цикла
+        }
+        console.log(i);
+    }
+    
+}
+
+// Место для третьей задачи
+function thirdTask() {
+    // Пишем решение вот тут
+    for (let i = 2; i <= 10; i += 2) {
+        console.log(i);
+    }
+    
+}
+
+// Место для четвертой задачи
+
+// Цикл, который нужно переписать:
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+function fourthTask() {
+    // Пишем решение вот тут
+    let i = 2;
+
+while (i <= 16) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++;
+}
+    
+}
+
+// Место для пятой задачи
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    // Пишем решение вот тут
+    // Используем цикл for для заполнения массива числами от 5 до 10
+    for (let i = 5; i <= 10; i++) {
+        arrayOfNumbers.push(i);
+    }
+    
+    // Возвращаем заполненный массив
+    // Не трогаем
+    return arrayOfNumbers;
+}
+
+// Вызываем функцию и выводим результат в консоль
+console.log(fifthTask());
