@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // ####################################################### Задача №1 ##################################
 
@@ -407,50 +407,19 @@ if (hamburger && cola || fries === 3 && nuggets) {
 
 4) Потренироваться и переписать цикл еще двумя способами*/
 
-'use strict';
+// 'use strict';
 
-// Код возьмите из предыдущего домашнего задания
+// // Код возьмите из предыдущего домашнего задания
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genders: [],
-	privat: false,
-};
-
-for (let i=0; i<2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-    b = prompt('На сколько оцените его?', '');
-    
-    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log('done');
-    } else {
-        console.log('done');
-        i--;
-    }
-}
-
-if (personalMovieDB.count < 10) {
-    console.log('Просмотрено довольно мало фильмов');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-    console.log('Вы классический зритель');
-} else if (personalMovieDB.count >= 30) {
-    console.log('Вы киноман');
-} else {
-    console.log('Произошла ошибка');
-}
-
-
-console.log(personalMovieDB);
-
-
-// ####################################################### Задачи/ОТВЕТ переписать цикл 2 способами №6.1 ##################################
-
-// Первый способ
+// const personalMovieDB = {
+//     count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genders: [],
+// 	privat: false,
+// };
 
 // for (let i=0; i<2; i++) {
 //     const a = prompt('Один из последних просмотренных фильмов?', ''),
@@ -465,35 +434,89 @@ console.log(personalMovieDB);
 //     }
 // }
 
-// Второй способ
-
-// let i = 0;
-// while (i < 2) {
-//     const a = prompt('Один из последних просмотренных фильмов?', ''),
-//           b = prompt('На сколько оцените его?', '');
-
-//     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
-//         personalMovieDB.movies[a] = b;
-//         console.log('done');
-//         i++;
-//     } else {
-//         console.log('error');
-//     }
+// if (personalMovieDB.count < 10) {
+//     console.log('Просмотрено довольно мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     console.log('Вы классический зритель');
+// } else if (personalMovieDB.count >= 30) {
+//     console.log('Вы киноман');
+// } else {
+//     console.log('Произошла ошибка');
 // }
 
-// Третий способ
 
-// let i = 0;
-// do {
-//     const a = prompt('Один из последних просмотренных фильмов?', ''),
-//           b = prompt('На сколько оцените его?', '');
+// console.log(personalMovieDB);
 
-//     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
-//         personalMovieDB.movies[a] = b;
-//         console.log('done');
+
+// ####################################################### Задачи/ОТВЕТ переписать цикл 2 способами №6.1 ##################################
+
+// Первый способ
+
+// for (let i=0; i<2; i++) {
+    //     const a = prompt('Один из последних просмотренных фильмов?', ''),
+    //     b = prompt('На сколько оцените его?', '');
+    
+    //     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        //         personalMovieDB.movies[a] = b;
+        //         console.log('done');
+        //     } else {
+            //         console.log('done');
+            //         i--;
+            //     }
+            // }
+            
+            // Второй способ
+            
+            // let i = 0;
+            // while (i < 2) {
+                //     const a = prompt('Один из последних просмотренных фильмов?', ''),
+                //           b = prompt('На сколько оцените его?', '');
+                
+                //     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
+                    //         personalMovieDB.movies[a] = b;
+                    //         console.log('done');
+                    //         i++;
+                    //     } else {
+                        //         console.log('error');
+                        //     }
+                        // }
+                        
+                        // Третий способ
+                        
+                        // let i = 0;
+                        // do {
+                            //     const a = prompt('Один из последних просмотренных фильмов?', ''),
+                            //           b = prompt('На сколько оцените его?', '');
+                            
+                            //     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
+                                //         personalMovieDB.movies[a] = b;
+                                //         console.log('done');
 //     } else {
-//         console.log('error');
-//     }
-//     i++;
-// } while (i < 2);
+    //         console.log('error');
+    //     }
+    //     i++;
+    // } while (i < 2);
+    
 
+// ####################################################### Замыкание в функциях ##################################
+
+
+// Замыкание в JavaScript можно представить как ситуацию, когда у внутренней функции есть доступ к переменным и параметрам внешней функции, даже после того, как внешняя функция завершила свое выполнение. Другими словами, внутренняя функция "запоминает" свое окружение, где она была создана, и может продолжать использовать его, даже когда вызывающая функция уже завершила свою работу.
+
+// Здесь функция createCounter создает счетчик, а вложенная функция возвращает и увеличивает значение счетчика при каждом вызове. Поскольку счетчик сохраняет свое текущее значение между вызовами благодаря замыканию, мы видим последовательный рост значений при каждом вызове.
+
+    'use strict';
+    
+    function createCounter() {
+        let count = 0;
+        
+        return function() {
+            return ++count;
+        };
+    }
+    
+    const counter = createCounter();
+    console.log(counter()); // 1
+    console.log(counter()); // 2
+    console.log(counter()); // 3
+    
