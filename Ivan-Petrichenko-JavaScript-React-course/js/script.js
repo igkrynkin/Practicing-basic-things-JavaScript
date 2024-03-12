@@ -453,61 +453,61 @@ if (hamburger && cola || fries === 3 && nuggets) {
 // Первый способ
 
 // for (let i=0; i<2; i++) {
-    //     const a = prompt('Один из последних просмотренных фильмов?', ''),
-    //     b = prompt('На сколько оцените его?', '');
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//     b = prompt('На сколько оцените его?', '');
     
-    //     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-        //         personalMovieDB.movies[a] = b;
-        //         console.log('done');
-        //     } else {
-            //         console.log('done');
-            //         i--;
-            //     }
-            // }
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('done');
+//         i--;
+//     }
+// }
             
-            // Второй способ
+// Второй способ
             
-            // let i = 0;
-            // while (i < 2) {
-                //     const a = prompt('Один из последних просмотренных фильмов?', ''),
-                //           b = prompt('На сколько оцените его?', '');
+// let i = 0;
+// while (i < 2) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его?', '');
                 
-                //     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
-                    //         personalMovieDB.movies[a] = b;
-                    //         console.log('done');
-                    //         i++;
-                    //     } else {
-                        //         console.log('error');
-                        //     }
-                        // }
+//     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//         i++;
+//     } else {
+//         console.log('error');
+//     }
+// }
                         
-                        // Третий способ
+// Третий способ
                         
-                        // let i = 0;
-                        // do {
-                            //     const a = prompt('Один из последних просмотренных фильмов?', ''),
-                            //           b = prompt('На сколько оцените его?', '');
+// let i = 0;
+// do {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его?', '');
                             
-                            //     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
-                                //         personalMovieDB.movies[a] = b;
-                                //         console.log('done');
-                                //     } else {
-                                    //         console.log('error');
-                                    //     }
-                                    //     i++;
-                                    // } while (i < 2);
+//     if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//     }
+//     i++;
+ // } while (i < 2);
                                     
                                     
-                                    // ####################################################### Замыкание в функциях ##################################
+ // ####################################################### Замыкание в функциях ##################################
                                     
                                     
-                                    // Замыкание в JavaScript можно представить как ситуацию, когда у внутренней функции есть доступ к переменным и параметрам внешней функции, даже после того, как внешняя функция завершила свое выполнение. Другими словами, внутренняя функция "запоминает" свое окружение, где она была создана, и может продолжать использовать его, даже когда вызывающая функция уже завершила свою работу.
+// Замыкание в JavaScript можно представить как ситуацию, когда у внутренней функции есть доступ к переменным и параметрам внешней функции, даже после того, как внешняя функция завершила свое выполнение. Другими словами, внутренняя функция "запоминает" свое окружение, где она была создана, и может продолжать использовать его, даже когда вызывающая функция уже завершила свою работу.
                                     
-                                    // Здесь функция createCounter создает счетчик, а вложенная функция возвращает и увеличивает значение счетчика при каждом вызове. Поскольку счетчик сохраняет свое текущее значение между вызовами благодаря замыканию, мы видим последовательный рост значений при каждом вызове.
+// Здесь функция createCounter создает счетчик, а вложенная функция возвращает и увеличивает значение счетчика при каждом вызове. Поскольку счетчик сохраняет свое текущее значение между вызовами благодаря замыканию, мы видим последовательный рост значений при каждом вызове.
                                     
-                                    // 'use strict';
+// 'use strict';
                                     
-                                    // function createCounter() {
+// function createCounter() {
     //     let count = 0;
     
     //     return function() {
@@ -522,37 +522,170 @@ if (hamburger && cola || fries === 3 && nuggets) {
     
 // ####################################################### Задачи/ОТВЕТ №7.1 ##################################
     
-'use strict';
+// 'use strict';
     
-    // Место для первой задачи
-    function sayHello(name) {
-    return "Привет, " + name + "!";
-}
+//     // Место для первой задачи
+//     function sayHello(name) {
+//     return "Привет, " + name + "!";
+// }
 
 // ####################################################### Задачи/ОТВЕТ №7.2 ##################################
 
 
 // Место для второй задачи
-function returnNeighboringNumbers(number) {
-    return [number - 1, number, number + 1];
-}
+// function returnNeighboringNumbers(number) {
+//     return [number - 1, number, number + 1];
+// }
 
 
 // ####################################################### Задачи/ОТВЕТ №7.3 ##################################
 
 
 // Место для третьей задачи
-function getMathResult(base, times) {
-    if (typeof times !== 'number' || times <= 0) {
-        return base;
-    }
+// function getMathResult(base, times) {
+//     if (typeof times !== 'number' || times <= 0) {
+//         return base;
+//     }
     
-    let result = '';
-    for (let i = 0; i < times; i++) {
-        result += base + (i * base);
-        if (i !== times - 1) {
-            result += '---';
-        }
+//     let result = '';
+//     for (let i = 0; i < times; i++) {
+//         result += base + (i * base);
+//         if (i !== times - 1) {
+//             result += '---';
+//         }
+//     }
+//     return result;
+// }
+
+
+
+// ####################################################### Задачи/ОТВЕТ №8 ##################################
+
+// 
+/* Задание на урок:
+
+1) Первую часть задания повторить по уроку
+
+2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
+false - выводит в консоль главный объект программы
+
+3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
+"Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
+genres
+
+P.S. Функции вызывать не обязательно*/
+
+'use strict';
+
+
+// let numberOfFilms;
+
+// function start() {
+    //     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+    
+    //     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        //         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+        //     }
+        // }
+        
+        // start();
+        
+        // const personalMovieDB = {
+            //     count: numberOfFilms,
+            // 	movies: {},
+            // 	actors: {},
+            // 	genders: [],
+            // 	privat: false,
+            // };
+            
+            
+            // function rememberMyFilms() {
+                //     for (let i=0; i<2; i++) {
+                    //         const a = prompt('Один из последних просмотренных фильмов?', ''),
+                    //         b = prompt('На сколько оцените его?', '');
+                    
+                    //         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+                        //             personalMovieDB.movies[a] = b;
+                        //             console.log('done');
+                        //         } else {
+                            //             console.log('done');
+                            //             i--;
+                            //         }
+                            //     }
+                            // }
+
+                            // rememberMyFilms();
+                            
+                            
+                            // function detectPersonalLevel() {
+                                //     if (personalMovieDB.count < 10) {
+                                    //         console.log('Просмотрено довольно мало фильмов');
+                                    //     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+                                        //         console.log('Вы классический зритель');
+                                        //     } else if (personalMovieDB.count >= 30) {
+//         console.log('Вы киноман');
+//     } else {
+    //         console.log('Произошла ошибка');
+    //     }
+    // }
+    
+    // detectPersonalLevel();
+    
+    // console.log(personalMovieDB);
+    
+    
+// ####################################################### Задачи/ОТВЕТ №8.1 ##################################
+
+
+'use strict';
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', '');
+    
+    if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
     }
-    return result;
 }
+
+if (personalMovieDB.count < 10) {
+    console.log('Просмотрено довольно мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log('Вы классический зритель');
+} else if (personalMovieDB.count >= 30) {
+    console.log('Вы киноман');
+} else {
+    console.log('Произошла ошибка');
+}
+
+function showMyDB() {
+    if (!personalMovieDB.privat) {
+        console.log(personalMovieDB);
+    }
+}
+
+function writeYourGenres() {
+    for (let i = 1; i <= 3; i++) {
+        const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+        personalMovieDB.genres.push(genre);
+    }
+}
+
+showMyDB();
+writeYourGenres();
+
+console.log(personalMovieDB);
