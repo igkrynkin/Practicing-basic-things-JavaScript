@@ -729,27 +729,33 @@ P.S. Функции вызывать не обязательно*/
 'use strict';
 
 // Место для первой задачи
-function getTimeFromMinutes(minutes) {
-    if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 0 || minutes > 600) {
-        return "Ошибка, проверьте данные";
-    }
+// function getTimeFromMinutes(minutes) {
+//     if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 0 || minutes > 600) {
+//         return "Ошибка, проверьте данные";
+//     }
 
-    const hours = Math.floor(minutes / 60);
-    const remainingMinutes = minutes % 60;
+//     const hours = Math.floor(minutes / 60);
+//     const remainingMinutes = minutes % 60;
 
-    const hoursString = hours === 1 ? 'час' : 'часов';
-    const minutesString = remainingMinutes === 1 ? 'минута' : 'минут';
+//     const hoursString = hours === 1 ? 'час' : 'часов';
+//     const minutesString = remainingMinutes === 1 ? 'минута' : 'минут';
 
-    return `Это ${hours} ${hoursString} и ${remainingMinutes} ${minutesString}`;
-}
+//     return `Это ${hours} ${hoursString} и ${remainingMinutes} ${minutesString}`;
+// }
 
-console.log(getTimeFromMinutes(75));
+// console.log(getTimeFromMinutes(75));
 
 
 // ####################################################### Задачи/ОТВЕТ №10.2 ##################################
 
 
-// // Место для второй задачи
-// function findMaxNumber() {
+// Место для второй задачи
+function findMaxNumber(a, b, c, d) {
+    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || typeof d !== 'number') {
+        return 0;
+    }
 
-// }
+    return Math.max(a, b, c, d);
+}
+
+console.log(findMaxNumber(1, 5, 6.6, 11)); // Выведет: 11
