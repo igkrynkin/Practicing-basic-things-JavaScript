@@ -693,7 +693,7 @@ P.S. Функции вызывать не обязательно*/
 
 // ####################################################### Задачи/ОТВЕТ №9.1 ##################################
 
-'use strict';
+// 'use strict';
 
 // Место для первой задачи
 // function calculateVolumeAndArea(edgeLength) {
@@ -713,13 +713,43 @@ P.S. Функции вызывать не обязательно*/
 
 
 // Место для второй задачи
-function getCoupeNumber(seatNumber) {
-    if (typeof seatNumber !== 'number' || !Number.isInteger(seatNumber) || seatNumber <= 0 || seatNumber > 36) {
-        return "Ошибка. Проверьте правильность введенного номера места";
+// function getCoupeNumber(seatNumber) {
+//     if (typeof seatNumber !== 'number' || !Number.isInteger(seatNumber) || seatNumber <= 0 || seatNumber > 36) {
+//         return "Ошибка. Проверьте правильность введенного номера места";
+//     }
+    
+//     const coupeNumber = Math.ceil(seatNumber / 4);
+//     return coupeNumber;
+// }
+
+// console.log(getCoupeNumber(33));
+
+// ####################################################### Задачи/ОТВЕТ №10.1 ##################################
+
+'use strict';
+
+// Место для первой задачи
+function getTimeFromMinutes(minutes) {
+    if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 0 || minutes > 600) {
+        return "Ошибка, проверьте данные";
     }
 
-    const coupeNumber = Math.ceil(seatNumber / 4);
-    return coupeNumber;
+    const hours = Math.floor(minutes / 60);
+    const remainingMinutes = minutes % 60;
+
+    const hoursString = hours === 1 ? 'час' : 'часов';
+    const minutesString = remainingMinutes === 1 ? 'минута' : 'минут';
+
+    return `Это ${hours} ${hoursString} и ${remainingMinutes} ${minutesString}`;
 }
 
-console.log(getCoupeNumber(33));
+console.log(getTimeFromMinutes(75));
+
+
+// ####################################################### Задачи/ОТВЕТ №10.2 ##################################
+
+
+// // Место для второй задачи
+// function findMaxNumber() {
+
+// }
