@@ -726,7 +726,7 @@ P.S. Функции вызывать не обязательно*/
 
 // ####################################################### Задачи/ОТВЕТ №10.1 ##################################
 
-'use strict';
+// 'use strict';
 
 // Место для первой задачи
 // function getTimeFromMinutes(minutes) {
@@ -750,12 +750,36 @@ P.S. Функции вызывать не обязательно*/
 
 
 // Место для второй задачи
-function findMaxNumber(a, b, c, d) {
-    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || typeof d !== 'number') {
-        return 0;
+// function findMaxNumber(a, b, c, d) {
+//     if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || typeof d !== 'number') {
+//         return 0;
+//     }
+
+//     return Math.max(a, b, c, d);
+// }
+
+// console.log(findMaxNumber(1, 5, 6.6, 11)); // Выведет: 11
+
+
+// ####################################################### Задачи/ОТВЕТ №11 ##################################
+
+'use strict';
+
+function fib(num) {
+    if (typeof num !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return '';
     }
 
-    return Math.max(a, b, c, d);
+    let fibSequence = '0';
+    if (num > 1) {
+        fibSequence += ' 1';
+        let a = 0, b = 1;
+        for (let i = 2; i < num; i++) {
+            const next = a + b;
+            fibSequence += ` ${next}`;
+            a = b;
+            b = next;
+        }
+    }
+    return fibSequence;
 }
-
-console.log(findMaxNumber(1, 5, 6.6, 11)); // Выведет: 11
