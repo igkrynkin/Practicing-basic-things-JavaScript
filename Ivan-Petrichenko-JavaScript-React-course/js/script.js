@@ -696,23 +696,30 @@ P.S. Функции вызывать не обязательно*/
 'use strict';
 
 // Место для первой задачи
-function calculateVolumeAndArea(edgeLength) {
-    if (typeof edgeLength !== 'number' || edgeLength <= 0 || !Number.isInteger(edgeLength)) {
-        return 'При вычислении произошла ошибка';
-    }
+// function calculateVolumeAndArea(edgeLength) {
+//     if (typeof edgeLength !== 'number' || edgeLength <= 0 || !Number.isInteger(edgeLength)) {
+//         return 'При вычислении произошла ошибка';
+//     }
 
-    const volume = edgeLength * edgeLength * edgeLength;
-    const surfaceArea = 6 * edgeLength * edgeLength;
+//     const volume = edgeLength * edgeLength * edgeLength;
+//     const surfaceArea = 6 * edgeLength * edgeLength;
 
-    return `Объем куба: ${volume}, площадь всей поверхности: ${surfaceArea}`;
-}
+//     return `Объем куба: ${volume}, площадь всей поверхности: ${surfaceArea}`;
+// }
 
-console.log(calculateVolumeAndArea(5));
+// console.log(calculateVolumeAndArea(5));
 
 // ####################################################### Задачи/ОТВЕТ №9.2 ##################################
 
 
-// // Место для второй задачи
-// function getCoupeNumber() {
+// Место для второй задачи
+function getCoupeNumber(seatNumber) {
+    if (typeof seatNumber !== 'number' || !Number.isInteger(seatNumber) || seatNumber <= 0 || seatNumber > 36) {
+        return "Ошибка. Проверьте правильность введенного номера места";
+    }
 
-// }
+    const coupeNumber = Math.ceil(seatNumber / 4);
+    return coupeNumber;
+}
+
+console.log(getCoupeNumber(33));
